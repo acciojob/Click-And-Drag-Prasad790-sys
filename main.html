@@ -54,7 +54,7 @@
     if (!isDown) return; // Stop the function from running if the mouse isn't clicked
     e.preventDefault();
     const x = e.pageX - items.offsetLeft; // Calculate how far the mouse has moved
-    const walk = (x - startX) * 2; // The scroll speed (2x faster)
+    const walk = (x - startX); // The scroll speed (2x faster)
     items.scrollLeft = scrollLeft - walk; // Set the new scroll position
   });
 
